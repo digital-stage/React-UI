@@ -1,11 +1,23 @@
 import React, { Component } from "react";
+// Importing Sass with Bootstrap CSS
+import "../styles/main.scss";
+
+import { Container, Row } from "react-bootstrap";
+
+import NavBar from "../components/NavBar";
+import Grid from "../components/Grid";
+import ToolBar from "../components/ToolBar";
 
 export default class Index extends Component {
   render() {
     return (
-      <div>
-        <h1>Hello React mock-up for digital stage</h1>
-      </div>
+      <>
+        <NavBar />
+        <Container>
+          <Grid />
+          <ToolBar />
+        </Container>
+      </>
     );
   }
 }

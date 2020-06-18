@@ -1,0 +1,55 @@
+@import "custom";
+$background: #ffffff;
+$header: #060606cc;
+$guitar: #ee04ff;
+$cello: #bbc80b;
+$vocals: #3fe2d3;
+$border: #5dcef8;
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: $background;
+}
+
+.logo {
+  top: 64px;
+  left: 34px;
+  width: 30px;
+  height: 30px;
+  transform: matrix(0.85, -0.53, 0.53, 0.85, 0, 0);
+  background: #ebf7fe 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.toolBar {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: 2.5rem;
+  background-color: $header;
+}
+.card-footer {
+  height: 1.5rem;
+  background: #000000;
+  padding: 0.2rem;
+  opacity: 0.4;
+  z-index: 1;
+}
+.bottomDiv {
+  position: absolute;
+  bottom: center;
+  right: 1rem;
+  height: 1rem;
+}
+.form-control-range {
+  width: 5rem;
+  color: white;
+}
+// bootstrap media Queries modification
+@media (min-width: 576px) {
+  .card-columns {
+    column-gap: 0;
+  }
+}
