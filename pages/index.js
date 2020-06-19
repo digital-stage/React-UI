@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // Importing Sass with Bootstrap CSS
 import "../styles/main.scss";
 
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 import NavBar from "../components/NavBar";
 import Grid from "../components/Grid";

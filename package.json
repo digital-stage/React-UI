@@ -21,6 +21,9 @@
   "author": "Jahangir khan",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.5.0",
     "next": "^9.4.2",
@@ -32,5 +35,6 @@
   "bugs": {
     "url": "https://github.com/digital-stage/React-UI/issues"
   },
-  "homepage": "https://github.com/digital-stage/React-UI#readme"
+  "homepage": "https://github.com/digital-stage/React-UI#readme",
+  "devDependencies": {}
 }
