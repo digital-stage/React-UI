@@ -21,6 +21,7 @@ export default function Grid() {
       <CardColumns>
         <Card>
           <Card.Img variant="top" src="/img1.png" />
+
           {
             <FontAwesomeIcon
               className="fontAwesome"
@@ -28,19 +29,19 @@ export default function Grid() {
               size="3x"
             />
           }
-          <Card.Footer>
-            <div className="footerDiv">
-              <FontAwesomeIcon icon={faUserCircle} color="white" />
-              <p>Mary swifton87</p>
-              <FontAwesomeIcon icon={faVolumeUp} color="white" />
-              <Form>
-                <Form.Control type="range" />
-              </Form>
-            </div>
-          </Card.Footer>
+
+          <div className="footerDiv">
+            <FontAwesomeIcon icon={faUserCircle} size="2x" />
+            <p>Mary swifton87</p>
+            <FontAwesomeIcon icon={faVolumeUp} color="white" />
+            <Form>
+              <Form.Control type="range" />
+            </Form>
+          </div>
         </Card>
         <Card>
           <Card.Img variant="top" src="/img3.png" />
+
           {
             <FontAwesomeIcon
               className="fontAwesome"
@@ -48,20 +49,20 @@ export default function Grid() {
               size="3x"
             />
           }
-          <Card.Footer>
-            <div className="footerDiv">
-              <FontAwesomeIcon icon={faUserCircle} color="white" />
-              <p>Mary swifton87</p>
-              <FontAwesomeIcon icon={faVolumeUp} color="white" />
-              <Form>
-                <Form.Control type="range" />
-              </Form>
-            </div>
-          </Card.Footer>
+
+          <div className="footerDiv">
+            <FontAwesomeIcon icon={faUserCircle} size="2x" />
+            <p>Mary swifton87</p>
+            <FontAwesomeIcon icon={faVolumeUp} color="white" />
+            <Form>
+              <Form.Control type="range" />
+            </Form>
+          </div>
         </Card>
 
         <Card>
           <Card.Img variant="top" src="/img2.png" />
+
           {
             <FontAwesomeIcon
               className="fontAwesome"
@@ -69,16 +70,15 @@ export default function Grid() {
               size="3x"
             />
           }
-          <Card.Footer>
-            <div className="footerDiv">
-              <FontAwesomeIcon icon={faUserCircle} color="white" />
-              <p>Mary swifton87</p>
-              <FontAwesomeIcon icon={faVolumeUp} color="white" />
-              <Form>
-                <Form.Control type="range" />
-              </Form>
-            </div>
-          </Card.Footer>
+
+          <div className="footerDiv">
+            <FontAwesomeIcon icon={faUserCircle} size="2x" />
+            <p>Mary swifton87</p>
+            <FontAwesomeIcon icon={faVolumeUp} color="white" />
+            <Form>
+              <Form.Control type="range" />
+            </Form>
+          </div>
         </Card>
       </CardColumns>
     </>
