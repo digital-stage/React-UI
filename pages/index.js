@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-// Importing Sass with Bootstrap CSS
+
 import "../styles/main.scss";
 
-import { Container } from "react-bootstrap";
-
 import NavBar from "../components/NavBar";
-import Grid from "../components/Grid";
+
+import SpacingGrid from "../components/SpacingGrid";
+
 import ToolBar from "../components/ToolBar";
+import { Grid, Container } from "@material-ui/core";
+import Metronome from "../components/Metronome";
 
 export default class Index extends Component {
   render() {
@@ -14,8 +16,16 @@ export default class Index extends Component {
       <>
         <NavBar />
         <Container>
-          <Grid />
-          <ToolBar />
+          <Grid container justify="center">
+            <Metronome />
+          </Grid>
+          <Grid container justify="center">
+            <SpacingGrid />
+          </Grid>
+
+          <Grid container spacing={0} direction="row" alignItems="center">
+            <ToolBar />
+          </Grid>
         </Container>
       </>
     );

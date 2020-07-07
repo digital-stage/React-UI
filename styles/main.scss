@@ -1,4 +1,17 @@
-@import "custom";
+body {
+  margin: 0;
+}
+
+// .logo {
+//   top: 64px;
+//   left: 34px;
+//   width: 30px;
+//   height: 30px;
+//   transform: matrix(0.85, -0.53, 0.53, 0.85, 0, 0);
+//   background: #ebf7fe 0% 0% no-repeat padding-box;
+//   opacity: 1;
+// }
+
 $background: #ffffff;
 $header: #060606cc;
 $guitar: #ee04ff;
@@ -6,92 +19,53 @@ $cello: #bbc80b;
 $vocals: #3fe2d3;
 $border: #5dcef8;
 $bottomDiv: rgb(77, 68, 68);
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-body {
-  background-color: $background;
-}
 
-.logo {
-  top: 64px;
-  left: 34px;
-  width: 30px;
-  height: 30px;
-  transform: matrix(0.85, -0.53, 0.53, 0.85, 0, 0);
-  background: #ebf7fe 0% 0% no-repeat padding-box;
-  opacity: 1;
-}
-
-.btn-group {
-  background-color: $background;
-}
-.card {
-  border-bottom: 0.5rem solid $guitar;
-}
 .footerDiv {
-  display: flex;
-  justify-content: space-evenly;
+  position: absolute;
   width: 100%;
   background-color: $bottomDiv;
   opacity: 0.6;
-  position: absolute;
-  bottom: 0rem;
+  line-height: 1rem;
+  bottom: 0px;
   z-index: 1;
-  line-height: 1.2rem;
+
   color: $background;
   padding-top: 5px;
 }
 
-.form-control-range {
-  width: 5rem;
-}
+// // //btn group
+// // .btn-primary {
+// //   color: $background;
+// //   background-color: $background;
+// //   line-height: 1rem;
+// //   overflow: hidden;
+// //   border: none;
 
-//btn group
-.btn-primary {
-  color: $background;
-  background-color: $background;
-  line-height: 1rem;
-  overflow: hidden;
-  border: none;
+// //   border-color: $background;
 
-  border-color: $background;
+// //   &:hover {
+// //     color: $background;
+// //     background-color: $background;
+// //     border-color: $background;
+// //   }
 
-  &:hover {
-    color: $background;
-    background-color: $background;
-    border-color: $background;
-  }
+// //   &:focus,
+// //   &:active {
+// //     color: $background;
+// //     background-color: $background;
+// //     border-color: $background;
+// //     outline: 0;
+// //   }
+// // }
 
-  &:focus,
-  &:active {
-    color: $background;
-    background-color: $background;
-    border-color: $background;
-    outline: 0;
-  }
-}
-
-//fonts awesome
+// //fonts awesome
 .fontAwesome {
   color: $background;
   position: absolute;
-  z-index: 1;
+
   left: 0rem;
   top: 0;
 
   border-radius: 50px;
   background-color: $header;
-}
-.fontAwesomeToolBar {
-  color: rgb(141, 140, 140);
-  font-size: small;
-}
-// bootstrap media Queries modification
-@media (min-width: 576px) {
-  .card-columns {
-    column-gap: 0;
-  }
 }
