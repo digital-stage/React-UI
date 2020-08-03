@@ -27,10 +27,12 @@
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@zeit/next-sass": "^1.0.1",
+    "formik": "^2.1.5",
     "next": "^9.4.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "yup": "^0.29.2"
   },
   "bugs": {
     "url": "https://github.com/digital-stage/React-UI/issues"
