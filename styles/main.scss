@@ -1,5 +1,9 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+body {
 }
 
 // .logo {
@@ -32,8 +36,7 @@ $bottomDiv: rgb(77, 68, 68);
   color: $background;
   padding-top: 5px;
 }
-.abc {
-  display: flex;
+.body_color {
   background: rgb(97, 23, 66);
   background: linear-gradient(
     80deg,
@@ -41,12 +44,24 @@ $bottomDiv: rgb(77, 68, 68);
     rgba(245, 9, 71, 1) 100%,
     rgba(255, 255, 255, 1) 100%
   );
-  color: whitesmoke;
-  font-weight: bold;
-  font-size: large;
+  width: 100%;
   height: 100vh;
-  width: auto;
 }
+// .abc {
+//   display: flex;
+//   background: rgb(97, 23, 66);
+//   background: linear-gradient(
+//     80deg,
+//     rgba(97, 23, 66, 1) 0%,
+//     rgba(245, 9, 71, 1) 100%,
+//     rgba(255, 255, 255, 1) 100%
+//   );
+//   color: whitesmoke;
+//   font-weight: bold;
+//   font-size: large;
+//   height: 100vh;
+//   width: auto;
+// }
 
 .center {
   margin: auto;
@@ -88,4 +103,56 @@ $bottomDiv: rgb(77, 68, 68);
 
   border-radius: 50px;
   background-color: $header;
+}
+
+//form
+
+.root-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+//sigin and signup boxes in login form
+.box-controller {
+  display: flex;
+  align-items: center;
+
+  margin-right: auto;
+  width: 60%;
+  margin-left: auto;
+  height: 24px;
+
+  background-color: #220e1a;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+.controller {
+  flex: 1;
+  text-align: center;
+  padding-top: 22px;
+
+  line-height: 2;
+  cursor: pointer;
+}
+
+//Currently Selected Controller
+.selected-controller {
+  transition: border 0.5s ease-out;
+  border-bottom: 2px solid #a81044;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 24em;
+  min-width: 21em;
+  box-shadow: 0px 0px 20px 0px rgba(15, 15, 15, 0.2);
+  border-radius: 6px;
+  padding: 24px;
 }
