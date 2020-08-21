@@ -1,30 +1,5 @@
-// import React from "react";
-
-// import Button from "@material-ui/core/Button";
-
-// export default function Welcome() {
-//   return (
-//     <div className="abc">
-//       <div className="center">
-//         <div>
-//           <img src="./logo.png" />
-//           <p>
-//             Your digital stage for art,music <br /> and theatre ensembles
-//           </p>
-//         </div>
-
-//         <div>
-//           <h1>Welcome Back</h1>
-
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 import React from "react";
 import "../styles/main.scss";
-import Link from "next/link";
 
 import Grid from "@material-ui/core/Grid";
 import { Button, Box } from "@material-ui/core";
@@ -39,8 +14,11 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
   },
-  h: {
+  headingColor: {
     color: "white",
+  },
+  submit: {
+    borderRadius: "25px",
   },
 }));
 
@@ -50,32 +28,49 @@ export default function SignIn() {
   return (
     <Box component="body" className="body_color">
       <Grid container direction="column" justify="center" alignItems="center">
-        <Grid item>
-          <img src="./logo.png" />
-        </Grid>
-        <Typography variant="h1" className={classes.h}>
-          Welcome
-        </Typography>
-        <Grid item>
-          <Button variant="contained" color="primary">
-            <Link href="/LoginForm2">
-              <a>Sign in</a>
-            </Link>
-          </Button>
-          <br />
-          <br />
-
-          <small>
-            sign into account or <br />
-            create a new account
-          </small>
-        </Grid>
+        <Box mt={3}>
+          <Grid item>
+            <img src="./logo.png" />
+          </Grid>
+          <Box mt={2}>
+            <Typography variant="h6" className={classes.headingColor}>
+              Your digital stage for art,music <br /> and theatre ensembles
+            </Typography>
+          </Box>
+        </Box>
+        <Box mt={12}>
+          <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+            spacing={2}
+          >
+            <Typography variant="h2" className={classes.headingColor}>
+              Welcome Back
+            </Typography>
+            <Grid item>
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                className={classes.submit}
+                href="/LoginForm2"
+              >
+                <a>Sign in</a>
+              </Button>
+              <br />
+              <small className={classes.headingColor}>
+                sign into account or <br />
+                create a new account
+              </small>
+            </Grid>
+          </Grid>
+        </Box>
       </Grid>
 
-      <Box mt={10} display="flex" justifyContent="center" variant="h5">
-        <small>
-          Enter stage ID to join as Guest {new Date().getFullYear()}
-        </small>
+      <Box display="flex" mt={12} justifyContent="center" mb={0}>
+        <small>Version 0.00001 {new Date().getFullYear()}</small>
       </Box>
     </Box>
   );

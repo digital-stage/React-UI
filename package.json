@@ -33,6 +33,10 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.1.21",
+    "react-microsoft-login": "^1.10.1",
+    "react-microsoft-login-ssr-fix": "^1.6.2",
     "yup": "^0.29.2"
   },
   "bugs": {
